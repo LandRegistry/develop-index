@@ -2,43 +2,129 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Workflow index
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row">
+
+<!----------   grid-row-two-thirds   --------->
+
+<div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        <h2 class="govuk-heading-l">Introduction</h2>
+        <p>
+            words about develop
+            <!-- Workflow is the process which items of work go through in order to be recorded and moved around on their journey
+            to being complete. Each item of work is prioritised, routed and the obtained by a member of staff to be processed. -->
+        </p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+        <div class="govuk-section-break--xl"></div>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+        <h2 class="govuk-heading-l">Current prototype</h2>
+        <p>
+            Link to more detailed information over the particular versions;
+            google.IO, scenario’s, flows tested, screen shots, user research etc.
+        </p>
+    </div>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+    <!----------   grid-row-one-third   --------->
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+    <div class="govuk-grid-column-one-third">
+        <!--<img src="../../public/images/filing-2.svg" alt="filing icon" height="56">-->
+        <h3 class="govuk-heading-m">Documents</h3>
+        <ul class="govuk-list govuk-body-s">
+            <li><a href="">Likely to be a list of links</a></li>
+            <li><a href="">Links to other information</a></li>
+            <li><a href="">User Research</a></li>
+        </ul>
 
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+        <div class="govuk-section-break--xl"></div>
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
+        <a href="">Our filing structure</a>
     </div>
 </div>
+
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-section-break--xl">
+        <div class="govuk-grid-column-one-third govuk-section-break--xl" align="center">
+            <img src="../../public/images/service-history.png" alt="Service History icon" height="56">
+            <div class="govuk-section-break--m"></div>
+            <h2 class="govuk-heading-m">Service History</h2>
+            <p>
+                A history showing all the previous prototype versions highlighting what has changed and why, linking in to
+                the user research that triggered the changes.
+            </p>
+        </div>
+
+        <div class="govuk-grid-column-one-third govuk-section-break--xl" align="center">
+            <img src="../../public/images/timeline.png" alt="Timeline icon" height="56">
+            <div class="govuk-section-break--m"></div>
+            <h2 class="govuk-heading-m">Timeline</h2>
+            <p>
+                What stage is the project in, how long will it be there, and when is the plan to move into the next stage.
+            </p>
+        </div>
+
+        <div class="govuk-grid-column-one-third govuk-section-break--xl" align="center">
+            <img src="../../public/images/assessments-2.png" alt="Assessments icon" height="56">
+            <div class="govuk-section-break--m"></div>
+            <h2 class="govuk-heading-m">Assessment</h2>
+            <p>
+                Have there been any assessments? Will there be an assessment, if so, when?
+            </p>
+            <a href="">Digital service standards</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--
+    <!-- this section will be repeated as many times as necessary
+    <h2 class="govuk-heading-l">Version history</h2>
+    <h3 class="govuk-heading-m">
+      <a href="">Version number/title</a>
+      <span class="govuk-caption-m">January 2019</span>
+    </h3>
+    <p>
+      Link to more detailed information over the particular versions; google.IO, scenario’s, flows tested,
+      screen shots,user research etc.
+    </p>
+
+    <h4 class="govuk-heading-s">What is it</h4>
+    <p>Summary of what was planned for this version.</p>
+
+    <h4 class="govuk-heading-s">What was learnt</h4>
+    <p>Bullet point summary.</p>
+
+    <div class="govuk-section-break--l"></div>
+    <hr>
+    <div class="govuk-section-break--m"></div>
+
+    <h3 class="govuk-heading-m">
+      <a href="">Version number/title</a>
+      <span class="govuk-caption-m">December 2018</span>
+    </h3>
+    <p>
+      Link to more detailed information over the particular versions; google.IO, scenario’s, flows tested,
+      screen shots,user research etc.
+    </p>
+
+    <h4 class="govuk-heading-s">What is it</h4>
+    <p>Summary of what was planned for this version.</p>
+
+    <h4 class="govuk-heading-s">What was learnt</h4>
+    <p>Bullet point summary.</p>
+
+    <div class="govuk-section-break--xl"></div>
+    <hr/>
+    <div class="govuk-section-break--l"></div> -->
+
+
+
 
 {% endblock %}

@@ -17,6 +17,7 @@ gulp.task('watch-assets', function () {
     config.paths.assets + 'javascripts/**'], { cwd: './' }, gulp.task('copy-assets'))
 })
 
+
 // Backward compatibility with Elements
 
 gulp.task('watch-sass-v6', function () {
