@@ -69,17 +69,23 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   border-bottom: 10px solid #033860;
 }
 
-.govuk-header-heading {
+.govuk-header__link, .govuk-header__link:visited {
   color: #0b0c0c;
-  margin-top: 150px;
+}
+
+.govuk-header__link--service-name {
+  margin-top: 3rem;
   margin-bottom: 10px;
+  font-size: 2rem;
+  line-height: 1.04167;
 }
 
 @media (min-width: 40.0625em) {
-  .govuk-header-heading {
+  .govuk-header__link--service-name {
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.04167;
+    margin-top: 9rem;
   }
 }
 
