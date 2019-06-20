@@ -1,0 +1,11 @@
+// /////////////////////////////////////////////////////////////////////
+// styles specific to the develop service(s) index
+// /////////////////////////////////////////////////////////////////////
+
+.service-status--closed {
+  // style for servcie status flag / label / banner - tbd;
+  background-color:red;
+  color: white;
+  padding:10px;
+  font-weight:700;
+}
