@@ -3,9 +3,21 @@
 // /////////////////////////////////////////////////////////////////////
 
 .service-status--closed {
-  // style for servcie status flag / label / banner - tbd;
+  // style for service status flag / label / banner - tbd;
   background-color:red;
   color: white;
   padding:10px;
   font-weight:700;
 }
+
+
+.app-step-nav__toggle-link {
+  text-align: right;
+}
+
+
+.app-step-nav__header {
+  border-top: solid 1px #dee0e2;
+}
+
+
