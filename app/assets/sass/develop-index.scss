@@ -2,14 +2,6 @@
 // styles specific to the develop service(s) index
 // /////////////////////////////////////////////////////////////////////
 
-.service-status--closed {
-  // style for service status flag / label / banner - tbd;
-  background-color:red;
-  color: white;
-  padding:10px;
-  font-weight:700;
-}
-
 
 .app-step-nav__toggle-link {
   text-align: right;
@@ -17,7 +9,15 @@
 
 
 .app-step-nav__header {
-  border-top: solid 1px #dee0e2;
+  border-top: solid 2px #dee0e2;
+}
+
+.app-step-nav__header__and {
+  border-top: solid 1px #f2f5f7;
+}
+
+.app-step-nav__header:hover {
+  background: #f2f5f7;
 }
 
 
