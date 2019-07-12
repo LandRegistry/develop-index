@@ -4,7 +4,7 @@ Pages, primarily for a design audience, to:
 
 * introduce the service/project/phase
 * link to the prototype(s) - behind accounts
-* link to other sources of useful information
+* link to other sources of useful information - behind accounts
 
 ## User need
 
