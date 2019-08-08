@@ -1,13 +1,30 @@
-@import "node_modules/govuk-frontend/settings/all";
+// global styles for <a> and <p> tags
 $govuk-global-styles: true;
 
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
 // Override the govuk-frontend font stack
-$govuk-font-family: Avenir Next, Arial, sans-serif;
+// $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+$govuk-font-family: "Avenir Next", "Arial", "sans-serif";
 
-// Remove canvas background colour, as is used with the GOV.UK Footer.
-$govuk-canvas-background-colour: $govuk-body-background-colour;
+// Override the canvas background colour, which is normally grey to blend with
+// the GOV.UK footer.
+// $govuk-canvas-background-colour: $govuk-body-background-colour;
 
-@import "node_modules/govuk-frontend/all";
 
 // /////////////////////////////////////////////////////////////////////
 // styles below override those in the gov frontend kit sass
@@ -17,6 +34,12 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 // /////////////////////////////////////////////////////////////////////
 // core styles /////////////////////////////////
 // /////////////////////////////////////////////////////////////////////
+
+// font - because i cant find how to make the override above work - doesn't seem to work
+
+* {
+	font-family: "Avenir Next", "Arial", "sans-serif" !important;
+}
 
 // page width
 
